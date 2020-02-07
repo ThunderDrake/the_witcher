@@ -5,6 +5,14 @@
    font-weight: normal;
    font-style: normal;
  }
+ * {
+   -webkit-tap-highlight-color: transparent;
+}
+button, a:focus{
+   outline: none;
+   outline-offset: 0;
+   border: none;
+}
 body {
    background-color: #141218;
    font-family: 'Roboto', sans-serif;
@@ -30,6 +38,7 @@ body {
    justify-content: space-between;
    padding-top: 60px;
    margin-bottom: 90px;
+   z-index: 2;
 }
 .menu-list {
    margin-right: auto;
@@ -272,6 +281,7 @@ body {
    }
    .menu-button-active {
       height: 0;
+      z-index: 3;
    }
    .menu-button-active:before {
       transform: rotate(45deg);
